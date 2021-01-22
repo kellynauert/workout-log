@@ -5,3 +5,4 @@
 ![plot](./postman-pics/getID.png)
 ![plot](./postman-pics/put.png)
 ![plot](./postman-pics/delete.png)
+![delete](https://github.com/kellynauert/workout-log/blob/main/postman-pics/delete.PNG)
