@@ -1,0 +1,7 @@
+![plot](./postman-pics/register.png)
+![plot](./postman-pics/login.png)
+![plot](./postman-pics/post.png)
+![plot](./postman-pics/getAll.png)
+![plot](./postman-pics/getID.png)
+![plot](./postman-pics/put.png)
+![plot](./postman-pics/delete.png)
