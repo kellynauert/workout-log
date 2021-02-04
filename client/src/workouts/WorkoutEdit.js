@@ -53,6 +53,7 @@ const WorkoutEdit = (props) => {
 								type='select'
 								name='definition'
 								value={editDefinition}
+								defaultValue='Time'
 								onChange={(e) => setEditDefinition(e.target.value)}
 							>
 								<option value='Time'>Time</option>

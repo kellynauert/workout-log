@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Select } from 'reactstrap';
 
 const WorkoutCreate = (props) => {
 	const [description, setDescription] = useState('');
-	const [definition, setDefinition] = useState('');
+	const [definition, setDefinition] = useState('Time');
 	const [result, setResult] = useState('');
 
 	const handleSubmit = (event) => {
@@ -24,7 +24,7 @@ const WorkoutCreate = (props) => {
 			.then((logData) => {
 				console.log(logData);
 				setDescription('');
-				setDefinition('');
+				setDefinition('Time');
 				setResult('');
 				props.fetchWorkouts();
 			});
@@ -49,7 +49,9 @@ const WorkoutCreate = (props) => {
 						value={definition}
 						onChange={(e) => setDefinition(e.target.value)}
 					>
-						<option value='Time'>Time</option>
+						<option selected value='Time'>
+							Time
+						</option>
 						<option value='Weight'>Weight</option>
 						<option value='Distance'>Distance</option>
 					</Input>
